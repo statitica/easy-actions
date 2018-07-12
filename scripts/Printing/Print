@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Allows multiple files to be used
+#from caja-actions or the like, should be run as
+# "bash /path/to/script.sh %F"
+for file in "$@"
+do
+    libreoffice -p "$(echo "$file")"
+done
