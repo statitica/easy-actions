@@ -1,25 +1,17 @@
 #!/bin/bash
 
-function copy_scripts {
-  cp -R -u -v ./scripts/* /home/$you/.config/caja/scripts
-}
-
-function change_permissions {
-  for folder in "$(ls /home/$you/.config/caja/scripts)"
-  do
-    for file in "$(ls /home/$you/.config/caja/scripts/$folder)"
-    do
-      echo "Changing permissions for $folder/$file"
-      chmod a+x /home/$you/.config/caja/scripts/$folder/$file
-    done
-  done
-}
-
 echo "Choose a user to install the scripts for"
-echo "or hold CTRL-C to exit"
+echo "or hold CTRL-C to cancel and exit"
 select you in "$(ls /home)"
 do
-copy_scripts
-change_permissions
-break
+  cp -Rv ./scripts/* /home/$you/.config/caja/scripts
+  #change_permissions
+  for file in $(ls -d /home/$you/.config/caja/*/*/*)
+    do
+      echo "Changing permissions for $file"
+      chown -R $you $file
+      chmod 755 $file
+      echo "$file is now executable"
+    done
+  break
 done
