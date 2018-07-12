@@ -7,7 +7,7 @@ installer will only work with caja and caja-actions.
 Requirements:
 caja-actions
 libreoffice
-pdktk
+poppler-utils
 
 To install these, there are two options: 
 
