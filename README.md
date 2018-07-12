@@ -17,7 +17,7 @@ In the terminal, type ```sudo bash install.sh``` and let the script do all of th
 In time, further options will be added to the install script.
 
 The second, more difficult option is to extract the scripts folders to 
-/home/<username>/.config/caja/scripts, and then give it permission to execute 
+```/home/<your_username>/.config/caja/scripts```, and then give it permission to execute 
 with the command ```sudo chmod a+x /path/to/script```
 
 Script requests are more than welcome, as are contributions from the community.
