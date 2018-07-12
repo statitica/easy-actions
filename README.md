@@ -4,6 +4,10 @@ Actions for file explorers in Linux
 While these scripts are compatible with multiple file explorers, for now the 
 installer will only work with caja-actions. 
 
+Requirements:
+caja-actions
+libreoffice
+
 To install these, there are two options: 
 
 The easiest way is to extract the files, and then open the folder where you 
