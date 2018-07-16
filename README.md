@@ -4,10 +4,11 @@ Actions for file explorers in Linux
 While these scripts are compatible with multiple file explorers, for now the 
 installer will only work with caja and caja-actions. 
 
-Requirements:
-caja-actions
-libreoffice
-poppler-utils
+### Requirements:
+* caja-actions
+* libreoffice
+* poppler-utils
+* Thunderbird
 
 To install these, there are two options: 
 
