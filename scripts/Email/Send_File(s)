@@ -1,9 +1,10 @@
 #!/bin/bash
 # Requires Thunderbird
 
-list="$1"
+path=$(dirname ${BASH_SOURCE[0]})
+list="$path/$1"
 shift
 for i in $@ ; do
-list=$list","$i
+list=$list",$path/$i"
 done
 thunderbird -compose "attachment='$list'"
