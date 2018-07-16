@@ -1,0 +1,10 @@
+#!/bin/bash
+# Requires Thunderbird
+
+list="$1"
+shift
+for i in $@ ; do
+list=$list","$i
+done
+echo "'$list'"
+thunderbird -compose "attachment='$list'"
