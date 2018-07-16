@@ -1,10 +1,11 @@
 #!/bin/bash
 # Requires Thunderbird
 
-path=$(dirname ${BASH_SOURCE[0]})
-list="$path/$1"
+path=$(dirname "$(readlink -f "$1")")
+list="$path/"$(basename "$(readlink -f "$1")")
 shift
 for i in $@ ; do
-list=$list",$path/$i"
+path=$(dirname "$(readlink -f "$i")")
+list=$list",$path/"$(basename "$(readlink -f "$i")")
 done
 thunderbird -compose "attachment='$list'"
