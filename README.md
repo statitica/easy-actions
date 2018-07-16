@@ -7,7 +7,7 @@ installer will only work with caja and caja-actions.
 Requirements:
 caja-actions
 libreoffice
-pdktk
+poppler-utils
 
 To install these, there are two options: 
 
@@ -18,6 +18,6 @@ In time, further options will be added to the install script.
 
 The second, more difficult option is to extract the scripts folders to 
 ```/home/<your_username>/.config/caja/scripts```, and then give it permission to execute 
-with the command ```sudo chmod a+x /path/to/script```
+with the command ```sudo chmod 755 /path/to/script```
 
 Script requests are more than welcome, as are contributions from the community.
