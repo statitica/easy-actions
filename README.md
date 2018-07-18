@@ -21,4 +21,6 @@ The second, more difficult option is to extract the scripts folders to any folde
 #### Troubleshooting
 The actions may not appear in your file manager right away. On my system they did, on another I had to restart the session manager (log out and then log in again).
 
+PDF to text conversion may not be completely accurate. This is dependent on the poppler-utils app, which has varying success rates.
+
 Script requests are more than welcome, as are contributions from the community.

@@ -14,7 +14,7 @@ TargetContext=false
 
 [X-Action-Profile profile-zero]
 ExecutionMode=Terminal
-Exec=bash /home/username/.easy-actions/scripts/Scanning/Scan_For_Email
+Exec=bash /home/username/.easy-actions/scripts/Scanning/Scan_For_Email %F
 Name[en_US]=Default profile
 Name[en]=Default profile
 Name[C]=Default profile
