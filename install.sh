@@ -5,6 +5,7 @@ echo "or hold CTRL-C to cancel and exit"
 select you in "$(ls /home)"
 do
   mkdir /home/$you/.easy-actions
+  mkdir -p /home/$you/.local/share/file-manager/actions
   cp -Rv ./scripts /home/$you/.easy-actions
   for file in $(ls ./launchers)
     do
