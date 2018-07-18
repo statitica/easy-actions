@@ -18,3 +18,4 @@ Exec=bash /home/username/.easy-actions/scripts/Email/Send_File(s)
 Name[en_US]=Default profile
 Name[en]=Default profile
 Name[C]=Default profile
+MimeTypes=!inode/directory
