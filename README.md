@@ -18,4 +18,7 @@ To install these for another user, you need to have access to elevated privilege
 
 The second, more difficult option is to extract the scripts folders to any folder of your choice, copy the launcher(s) you require to `/home/<user_name>/.local/share/file-manager/actions`, edit the `.desktop` file to point the launcher at the script and then restart the file manager.
 
+#### Troubleshooting
+The actions may not appear in your file manager right away. On my system they did, on another I had to restart the session manager (log out and then log in again).
+
 Script requests are more than welcome, as are contributions from the community.
