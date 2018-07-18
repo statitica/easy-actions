@@ -18,4 +18,4 @@ Exec=bash /home/username/.easy-actions/scripts/PDF/Convert_To_PDF
 Name[en_US]=Default profile
 Name[en]=Default profile
 Name[C]=Default profile
-MimeTypes=!/applications/pdf;text/*;applications/*
+MimeTypes=text/*;application/*;!application/pdf;!image/*
