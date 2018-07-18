@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Action
+ToolbarLabel[en_US]=Convert PDF to Text
+ToolbarLabel[en]=Convert PDF to Text
+ToolbarLabel[C]=Convert PDF to Text
+Name[en_US]=Convert PDF to Text
+Name[en]=Convert PDF to Text
+Name[C]=Convert PDF to Text
+Profiles=profile-zero;
+
+TargetLocation=false
+
+TargetContext=true
+
+[X-Action-Profile profile-zero]
+ExecutionMode=Terminal
+Exec=bash /home/username/.easy-actions/scripts/PDF/Convert_To_PDF
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile
+MimeTypes=application/pdf
