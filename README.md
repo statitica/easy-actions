@@ -23,4 +23,6 @@ The actions may not appear in your file manager right away. On my system they di
 
 PDF to text conversion may not be completely accurate. This is dependent on the poppler-utils app, which has varying success rates.
 
+As it stands now, there seems to be a bug with the execution of folder based actions (the script is executed *in the folder above* the selected folder). For this reason, they are back in the old scripts folder, as executables.
+
 Script requests are more than welcome, as are contributions from the community.
