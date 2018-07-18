@@ -3,11 +3,9 @@ Actions for file explorers in Linux
 
 ### Requirements:
 * file-manager-actions (e.g. caja-actions, nautilus-actions, etc)
-* scanimage
 * libreoffice
 * poppler-utils
 * Thunderbird
-* zenity
 * imagemagick
 
 To install these, there are two options:
