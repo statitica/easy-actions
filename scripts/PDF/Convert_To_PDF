@@ -3,7 +3,7 @@
 # uses libreoffice to convert documents to PDF
 
 function convert {
-  libreoffice --convert-to pdf "$(echo "$file")" 
+  lowriter --convert-to pdf "$(echo "$file")" 
 }
 
 for file in "$@"

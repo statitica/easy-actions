@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Action
+ToolbarLabel[en_US]=Convert Image(s) to PDF
+ToolbarLabel[en]=Convert Image(s) to PDF
+ToolbarLabel[C]=Convert Image(s) to PDF
+Name[en_US]=Convert Image(s) to PDF
+Name[en]=Convert Image(s) to PDF
+Name[C]=Convert Image(s) to PDF
+Profiles=profile-zero;
+
+TargetLocation=false
+
+TargetContext=true
+
+[X-Action-Profile profile-zero]
+ExecutionMode=Terminal
+Exec=bash /home/username/.easy-actions/scripts/PDF/imagetoPDF
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile
+MimeTypes=image/*

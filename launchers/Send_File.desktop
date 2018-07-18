@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Action
+ToolbarLabel[en_US]=Attach File(s) to Email
+ToolbarLabel[en]=Attach File(s) to Email
+ToolbarLabel[C]=Attach File(s) to Email
+Name[en_US]=Attach File(s) to Email
+Name[en]=Attach File(s) to Email
+Name[C]=Attach File(s) to Email
+Profiles=profile-zero;
+
+TargetLocation=false
+
+TargetContext=true
+
+[X-Action-Profile profile-zero]
+ExecutionMode=Terminal
+Exec=bash /home/username/.easy-actions/scripts/Email/Send_File(s)
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile

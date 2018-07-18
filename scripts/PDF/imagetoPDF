@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# uses imagemagick to convert documents to PDF
+
+for file in "$@"
+do
+  convert $file $(echo "$file" | awk -F . '{print $1}').pdf
+done

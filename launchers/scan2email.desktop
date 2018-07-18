@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Action
+ToolbarLabel[en_US]=Scan for Email
+ToolbarLabel[en]=Scan for Email
+ToolbarLabel[C]=Scan for Email
+Name[en_US]=Scan for Email
+Name[en]=Scan for Email
+Name[C]=Scan for Email
+Profiles=profile-zero;
+
+TargetLocation=true
+
+TargetContext=false
+
+[X-Action-Profile profile-zero]
+ExecutionMode=Terminal
+Exec=bash /home/username/.easy-actions/scripts/Scanning/Scan_For_Email
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile

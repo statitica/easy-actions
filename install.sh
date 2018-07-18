@@ -4,14 +4,13 @@ echo "Choose a user to install the scripts for"
 echo "or hold CTRL-C to cancel and exit"
 select you in "$(ls /home)"
 do
-  cp -Rv ./scripts/* /home/$you/.config/caja/scripts
-  #change_permissions
-  for file in $(ls -d /home/$you/.config/caja/*/*/*)
+  mkdir /home/$you/.easy-actions
+  cp -Rv ./scripts /home/$you/.easy-actions
+  for file in $(ls ./launchers)
     do
-      echo "Changing permissions for $file"
-      chown -R $you $file
-      chmod 755 $file
-      echo "$file is now executable"
+      sed "s/username/$you/" ./launchers/$file > /home/$you/.local/share/file-manager/actions/$file
+      echo "$file"
     done
+    notify-send 'easy-actions installed and ready for use'
   break
 done

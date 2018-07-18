@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Action
+ToolbarLabel[en_US]=Print Document(s)
+ToolbarLabel[en]=Print Document(s)
+ToolbarLabel[C]=Print Document(s)
+Name[en_US]=Print Document(s)
+Name[en]=Print Document(s)
+Name[C]=Print Document(s)
+Profiles=profile-zero;
+
+TargetLocation=false
+
+TargetContext=true
+
+[X-Action-Profile profile-zero]
+ExecutionMode=Terminal
+Exec=bash /home/username/.easy-actions/scripts/Printing/Print
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile
+MimeTypes=image/*;application/*;text/*
